@@ -13,6 +13,7 @@ import DescubraScreen from './components/Descubra/DescubraScreen';
 import AboutScreen from './components/about/AboutScreen';
 import ContactScreen from './components/contacts/ContactScreen';
 import PerfilScreen from './components/perfil/PerfilScreen';
+import MenuBar from './components/menuBar/menuBar';
 
 
 
@@ -29,6 +30,7 @@ export default function App() {
         <Stack.Screen name="About" component={AboutScreen} />  
         <Stack.Screen name="Contact" component={ContactScreen} />
         <Stack.Screen name="Perfil" component={PerfilScreen} />
+        <Stack.Screen name="menuBar" component={MenuBar}/>
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -22,10 +22,6 @@ container: {
     alignItems: 'center',
     flexDirection: 'row',
     marginTop: '15px',
-
-
-   
-
   },
   
   fotoContainer:{

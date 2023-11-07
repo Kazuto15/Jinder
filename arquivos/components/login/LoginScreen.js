@@ -6,7 +6,7 @@ export default function LoginScreen ({navigation}) {
     let [email, setEmail] = useState ('');
     let [senha, setSenha] = useState ('');
     const validacao = () => {
-      if(email === "eus@com" && senha === "123"){
+      if(email === "jinder@com" && senha === "adm"){
       navigation.navigate('Descubra')
       }else{
        

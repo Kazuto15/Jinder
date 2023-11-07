@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text, TouchableOpacity } from 'react-native';
 import styleDescubra from './styleDescubra';
+import MenuBar from '../menuBar/menuBar';
 
 export default function DescubraScreen ({navigation}){
     const goAbout = () => {
@@ -32,9 +33,7 @@ export default function DescubraScreen ({navigation}){
         style={styleDescubra.buttonContatos}  
         onPress={() => goContact()} >
         <Text style={styleDescubra.buttonText}>IR PARA CONTATOS</Text>
-        
         </TouchableOpacity>
-  
         <TouchableOpacity 
         style={styleDescubra.buttonContatos}  
         onPress={() => goRecomendacao()} >
@@ -49,6 +48,8 @@ export default function DescubraScreen ({navigation}){
         
         </TouchableOpacity>
 
+
+        <MenuBar navigation={navigation} />
 
   
       </View>

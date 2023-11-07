@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text, TouchableOpacity } from 'react-native';
 import stylePerfil from './stylePerfil';
+import MenuBar from '../menuBar/menuBar';
 
 export default function PerfilScreen ({navigation}){
     const goDescubra = () =>{
@@ -15,19 +16,7 @@ export default function PerfilScreen ({navigation}){
       <View style={stylePerfil.container}>
         <Text style={stylePerfil.title}> descubra novas pessoas </Text>
 
-        <TouchableOpacity 
-        style={stylePerfil.buttonDescubra}  
-        onPress={() => goDescubra()} >
-        <Text style={stylePerfil.buttonText}>DESCUBRA</Text>
-        
-        </TouchableOpacity>
-  
-        <TouchableOpacity 
-        style={stylePerfil.buttonRecomendacao}  
-        onPress={() => goRecomendacao()} >
-        <Text style={stylePerfil.buttonText}>RECOMENDADOS</Text>
-        
-        </TouchableOpacity>
+        <MenuBar navigation={navigation}/>
 
       </View>
     );

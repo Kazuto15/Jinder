@@ -3,6 +3,7 @@ import React from 'react';
 import { View, Image, Text, TouchableOpacity, FlatList } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import styleRecomendacao from './styleRecomendacao';
+import MenuBar from '../menuBar/menuBar';
 export default function RecomendacaoScreen ({navigation}){
 
     const goAbout = () => {
@@ -277,23 +278,9 @@ export default function RecomendacaoScreen ({navigation}){
           
         />
   
-        <SafeAreaView style={styleRecomendacao.safearea}>
-        
-          <TouchableOpacity 
-          style={styleRecomendacao.buttonSobre}  
-          onPress={() => goAbout()} >
-          <Text style={styleRecomendacao.buttonText}>SOBRE NÓS</Text>
-          
-          </TouchableOpacity> 
-  
-          <TouchableOpacity 
-          style={styleRecomendacao.buttonContatos}  
-          onPress={() => goContact()} >
-          <Text style={styleRecomendacao.buttonText}>CONTATOS</Text>
-          
-          </TouchableOpacity>
-  
-        </SafeAreaView>
+      <MenuBar navigation={navigation}/>
+            
+      
       </View>
     );
   }

@@ -14,22 +14,38 @@ const styleAbout = StyleSheet.create({
     paddingBottom: '200px',
     
   },
-  buttonContatos: {
-    alignItems: 'center',
-    backgroundColor: 'white',
-    paddingHorizontal: '25px',
-    padding: '10px',
-    borderRadius: '25px',
-  },
   title: {
+    top:30,
     fontSize: '30px',
     color: 'white',
     fontWeight:'25px',
-    paddingBottom: '150px',
   },  
+  aboutText:{
+    color:'white',
+    top:100,
+    fontSize:'130%',
+    border:'2px solid white',
+    borderRadius:10,
+    marginLeft:'30px',
+    marginRight:'30px',
+  },
+  subtitle:{
+    top:200,
+    fontSize: '30px',
+    color: 'white',
+    fontWeight:'25px',
+  },
   buttonText:{
     fontSize: '18px',
   },
+  membros:{
+    position:'relative'
+  },
+  imgMembros:{
+    height:100,
+    width:100,
+    marginTop:50,
+  }
 });
 
 export default styleAbout;
