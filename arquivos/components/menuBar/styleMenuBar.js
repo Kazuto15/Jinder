@@ -4,10 +4,12 @@ import { StyleSheet } from 'react-native';
 const styleMenuBar = StyleSheet.create({
   container: {
     backgroundColor: '#BB2525',
-    flex: 3,
-    justifyContent: 'center',
+    flex: 1,
+    justifyContent: 'flex-end',
     alignItems: 'center',
-    
+    zIndex: 1,
+    position:'absolute',
+    bottom:0,
   },
   label: {
     fontWeight: 'bold',
